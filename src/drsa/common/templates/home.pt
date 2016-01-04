@@ -1,0 +1,24 @@
+<metal:master use-macro="view.main_template">
+    <metal:header fill-slot="header">
+        <h1 class="page-header">KPDNKK Dashboards</h1>
+    </metal:header>
+    <metal:content fill-slot="content">
+        <div class="row">
+            <div class="col-lg-4 col-md-4" tal:repeat="dash dashboards">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div>
+                            <h3 tal:content="dash['title']">Title</h3>
+                        </div>
+                    </div>
+                    <div class="panel-body"> 
+                        <div class="text-right">
+                            <a href="#"
+                                tal:attributes="href dash['url']">Go to dashboard</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </metal:content>
+</metal:master>

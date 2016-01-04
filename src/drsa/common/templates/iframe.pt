@@ -1,0 +1,16 @@
+<metal:master use-macro="view.main_template">
+    <metal:header fill-slot="header">
+        <h1 tal:content="title">Header</h1>
+    </metal:header>
+    <metal:content fill-slot="content">
+        <div style="text-align:right">
+            <p>
+                <a tal:attributes="href iframe_url"><button>View Fullscreen</button></a>
+            </p>
+        </div>
+        <iframe tal:attributes="src iframe_url;
+            style iframe_style"
+            frameborder="0"></iframe>
+
+    </metal:content>
+</metal:master>
