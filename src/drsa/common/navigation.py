@@ -6,12 +6,5 @@ class NavigationProvider(object):
     implements(INavigationProvider)
 
     def get_links(self):
-        return [{
-            'href': '/drsa.common',
-            'label': 'drsa.common Dashboard',
-            'order': 1
-        }]
+        return []
 
-@home_url
-def get_home_url(request, groups):
-    return request.resource_url(request.context, 'drsa.common')

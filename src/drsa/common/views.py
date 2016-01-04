@@ -6,7 +6,4 @@ from wraptor.decorators import memoize
 from sqlalchemy.sql import text
 
 class Views(BaseViews):
-
-    @view_config(route_name='drsa.common', renderer='templates/default.pt')
-    def default_view(self):
-        return { 'page_header': 'drsa.common Dashboard' }
+    pass

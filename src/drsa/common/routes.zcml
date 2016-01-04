@@ -2,8 +2,4 @@
         xmlns:zcml="http://namespaces.zope.org/zcml">
     <include package="pyramid_zcml"/>
 
-    <route 
-        name="drsa.common"
-        pattern="/drsa.common"/>
-
 </configure>
