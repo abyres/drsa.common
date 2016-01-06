@@ -8,15 +8,4 @@
         name="++static++drsa.common"
         path="static"/>
 
-    <utility
-        factory=".navigation.NavigationProvider"
-        provides="pysiphae.interfaces.INavigationProvider"
-        name="drsa.common"/>
-
-    <utility
-        factory=".navigation.HomeViewResolver"
-        provides="pysiphae.interfaces.IHomeViewResolver"
-        name="drsa.common"/>
-
-
 </configure>
