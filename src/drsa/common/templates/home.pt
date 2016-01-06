@@ -1,6 +1,6 @@
 <metal:master use-macro="view.main_template">
     <metal:header fill-slot="header">
-        <h1 class="page-header">KPDNKK Dashboards</h1>
+        <h1 class="page-header">Dashboards</h1>
     </metal:header>
     <metal:content fill-slot="content">
         <div class="row">
