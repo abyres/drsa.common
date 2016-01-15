@@ -1,4 +1,4 @@
-<metal:master use-macro="view.main_template">
+<metal:master use-macro="request.main_template">
     <metal:header fill-slot="header">
         <h1 tal:content="title">Header</h1>
     </metal:header>
