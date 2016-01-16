@@ -9,6 +9,7 @@ from sqlalchemy.sql import text
         permission='pysiphae.View')
 def home_view(context, request):
     items = request.main_navigation
+    items = filter(lambda x: x.get('type','item') == 'item', items)
     dashboards = [{'title': i['label'], 'url': i['href']} for i in items]
     return {
         'dashboards': dashboards
