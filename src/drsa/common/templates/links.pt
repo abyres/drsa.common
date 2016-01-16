@@ -1,0 +1,12 @@
+<ul class="sidebar-menu">
+    <li>
+        <a href="http://sas.drsa.mampu.gov.my/SASVisualAnalyticsHub">
+            <img src="/++static++drsa.common/sas-va.png"/>
+        </a>
+    </li>
+    <li>
+        <a href="http://sas.drsa.mampu.gov.my/SASVisualAnalyticsExplorer">
+            <img src="/++static++drsa.common/sas-vs.png"/>
+        </a>
+    </li>
+</ul>

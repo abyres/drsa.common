@@ -14,3 +14,9 @@ def home_view(context, request):
         'dashboards': dashboards
     }
 
+
+@view_config(name="drsa.common.links",
+        renderer='templates/links.pt',
+        permission='pysiphae.View')
+def links(context, request):
+    return {}
