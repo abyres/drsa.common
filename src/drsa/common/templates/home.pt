@@ -1,4 +1,9 @@
 <metal:master use-macro="request.main_template">
+    <metal:style fill-slot="style_slot">
+        .panel-heading a {
+            color: #fff
+        }
+    </metal:style>
     <metal:header fill-slot="header">
         <h1 class="page-header">Dashboards</h1>
     </metal:header>
