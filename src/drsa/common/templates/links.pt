@@ -1,4 +1,4 @@
-<ul class="sidebar-menu">
+<ul class="sidebar-menu hide-on-collapse">
     <li>
         <a href="http://sas.drsa.mampu.gov.my/SASVisualAnalyticsHub">
             <img src="/++static++drsa.common/sas-va.png"/>
