@@ -1,4 +1,4 @@
-<div style="text-align:center;background:#fff;">
+<div style="text-align:center;background:#fff;" class="hide-on-collapse">
     <img style="margin-top:20px;margin-bottom:20px" 
         tal:condition="request.has_permission('drsa.kpdnkk.View')"
                 src="/++static++drsa.common/kpdnkk.png"/>
