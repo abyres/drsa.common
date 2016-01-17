@@ -4,23 +4,26 @@ import urllib
 class SASIFrameProvider(object):
    
     def __init__(self, title, report_path, report_name,
-        server=None, height=500):
+        server=None, height=500, anonymous=False):
         self.title = title
         self.report_path = report_path
         self.report_name = report_name
         self.server = server
         self.height = height
         self.server = None
+        self.anonymous = anonymous
 
     def iframe_url(self, request):
         server = self.server
         if not server:
             server = request.registry.settings.get('drsa.sas.url', '')
         server_url = server.strip().split("/")
-        va_path = [
-            "SASVisualAnalyticsViewer",
-            "VisualAnalyticsViewer_guest.jsp"
-        ]
+        if self.anonymous:
+            va_path = ["SASVisualAnalyticsViewer",
+                    "VisualAnalyticsViewer_guest.jsp"]
+        else:
+            va_path = ["SASVisualAnalyticsViewer",
+                   "VisualAnalyticsViewer.jsp"]
         reportPath = self.report_path.strip().replace(" ","+")
         reportName = self.report_name.strip().replace(" ","+")
 
