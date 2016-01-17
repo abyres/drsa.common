@@ -1,0 +1,14 @@
+<div style="text-align:center;background:#fff;">
+    <img style="margin-top:20px;margin-bottom:20px" 
+        tal:condition="request.has_permission('drsa.kpdnkk.View')"
+                src="/++static++drsa.common/kpdnkk.png"/>
+    <img style="margin-top:20px;margin-bottom:20px"  
+        tal:condition="request.has_permission('drsa.kkm.View')"
+                src="/++static++drsa.common/moh.png"/>
+    <img style="margin-top:20px;margin-bottom:20px" 
+        tal:condition="request.has_permission('drsa.mampu.View')"
+                src="/++static++drsa.common/mampu.png"/>
+    <img style="margin-top:20px;margin-bottom:20px" 
+        tal:condition="request.has_permission('drsa.pdrm.View')"
+                src="/++static++drsa.common/pdrm.png"/>
+</div>

@@ -1,6 +1,7 @@
 from pyramid.view import view_config
 from sqlalchemy.engine import create_engine
 from pyramid.exceptions import NotFound
+from pyramid.security import NO_PERMISSION_REQUIRED
 from wraptor.decorators import memoize
 from sqlalchemy.sql import text
 
@@ -20,4 +21,16 @@ def home_view(context, request):
         renderer='templates/links.pt',
         permission='pysiphae.View')
 def links(context, request):
+    return {}
+
+@view_config(name='drsa.common.transparentlogo',
+        renderer='templates/logo.pt',
+        permission=NO_PERMISSION_REQUIRED)
+def logo(context, request):
+    return {}
+
+@view_config(name='drsa.common.grouplogo',
+        renderer='templates/grouplogo.pt',
+        permission=NO_PERMISSION_REQUIRED)
+def grouplogo(context, request):
     return {}
