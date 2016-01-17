@@ -8,7 +8,8 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading" style="min-height:120px">
                         <div>
-                            <h3 tal:content="dash['title']">Title</h3>
+                            <h3><a tal:attributes="href dash['url']" 
+                                    tal:content="dash['title']">Title</a></h3>
                         </div>
                     </div>
                     <div class="panel-body"> 
