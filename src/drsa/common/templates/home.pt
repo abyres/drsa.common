@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-4" tal:repeat="dash dashboards">
                 <div class="panel panel-primary">
-                    <div class="panel-heading">
+                    <div class="panel-heading" style="min-height:120px">
                         <div>
                             <h3 tal:content="dash['title']">Title</h3>
                         </div>
