@@ -4,5 +4,9 @@
 
     <route name="drsa.home"
         pattern="/drsa"/>
+  
+    <route name="drsa.common.changepassword"
+        pattern="/change-password"/>
+
 
 </configure>

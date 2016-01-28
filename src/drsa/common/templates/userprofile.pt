@@ -1,0 +1,18 @@
+<li class="user-header" tal:condition="displayname">
+  <img src="/++static++/silhouette-160x160.png" 
+    class="img-circle" alt="User Image"/>
+  <p>
+    <span tal:content="displayname">John Doe</span>
+    <small tal:content="username">johnname</small>
+  </p>
+</li>
+<li class="user-body">
+  <div class="row">
+    <div class="col-xs-12">
+      <ul>
+        <li><a href="/change-password">Change Password</a></li>
+      </ul>
+    </div>
+  </div>
+</li>
+
