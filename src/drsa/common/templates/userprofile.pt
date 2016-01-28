@@ -1,6 +1,6 @@
 <li class="user-header" tal:condition="displayname">
   <img src="/++static++/silhouette-160x160.png" 
-    class="img-circle" alt="User Image"/>
+    class="img-circle" alt="User Image" tal:replace="nothing"/>
   <p>
     <span tal:content="displayname">John Doe</span>
     <small tal:content="username">johnname</small>
