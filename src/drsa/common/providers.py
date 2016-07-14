@@ -4,7 +4,7 @@ import urllib
 class SASIFrameProvider(object):
    
     def __init__(self, title, report_path, report_name,
-        server=None, height=500, anonymous=False):
+        server=None, height=500, anonymous=True):
         self.title = title
         self.report_path = report_path
         self.report_name = report_name
